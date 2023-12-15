@@ -41,6 +41,6 @@ data class Result(
     val lineups: Lineups?,
     val stage_name: String?,
     val statistics: List<Statistic>?,
-    val substitutes: List<SubstituteXX>?,
+//    val substitutes: List<SubstituteXX>?,
     val vars: Vars
 ): Parcelable

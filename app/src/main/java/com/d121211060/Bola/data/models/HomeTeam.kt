@@ -10,5 +10,5 @@ data class HomeTeam(
     val coaches: List<Coache>,
 //    val missing_players: List<Any>,
     val starting_lineups: List<StartingLineup>,
-    val substitutes: List<SubstituteXX>
+//    val substitutes: List<SubstituteXX>
 ): Parcelable

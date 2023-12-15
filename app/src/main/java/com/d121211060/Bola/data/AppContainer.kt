@@ -15,8 +15,12 @@ class DefaultAppContainer: AppContainer {
 
     private val BASE_URL = "https://apiv2.allsportsapi.com"
 
+    val json = Json {
+        ignoreUnknownKeys = true
+    }
+
     private val retrofit = Retrofit.Builder()
-        .addConverterFactory(Json.asConverterFactory("application/json".toMediaType()))
+        .addConverterFactory(json.asConverterFactory("application/json".toMediaType()))
         .baseUrl(BASE_URL)
         .build()
 
